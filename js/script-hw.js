@@ -52,3 +52,66 @@ console.groupEnd();
 //     makeTransaction(5000, 10, 8000);
 //     makeTransaction(2000, 8, 10000);
 //     makeTransaction(500, 10, 5000);
+
+// Завдання 24
+// function getDiscount(totalSpent) {
+//     const BASE_DISCOUNT = 0;
+//     const BRONZE_DISCOUNT = 0.02;
+//     const SILVER_DISCOUNT = 0.05;
+//     const GOLD_DISCOUNT = 0.1;
+//     let discount;
+//     // Change code below this line
+// switch (totalSpent) {
+//     case ">= 50000":
+//     discount = GOLD_DISCOUNT;
+//     break;
+    
+//     case ">= 20000 || <= 50000":
+//     discount = SILVER_DISCOUNT;
+//     break;
+    
+//     case ">= 5000 || <= 20000":
+//     discount = BRONZE_DISCOUNT;
+//     break;
+    
+//     case "< 5000":
+//     discount = BASE_DISCOUNT;
+
+//     // Change code above this line
+//     return discount;
+// }
+//     getDiscount(137000);
+//     getDiscount(46900);
+//     getDiscount(8250);
+//     getDiscount(1300);
+//     getDiscount(5000);
+//     getDiscount(20000);
+//     getDiscount(50000);
+// }
+// варіант 2 - підходить для цього завдання
+function getDiscount(totalSpent) {
+    const BASE_DISCOUNT = 0;
+    const BRONZE_DISCOUNT = 0.02;
+    const SILVER_DISCOUNT = 0.05;
+    const GOLD_DISCOUNT = 0.1;
+    let discount;
+    // Change code below this line
+    
+if (totalSpent >= 50000) {
+    discount = GOLD_DISCOUNT;
+} else if (totalSpent >= 20000 || totalSpent <= 50000) {
+    discount = SILVER_DISCOUNT;
+} else if (totalSpent >= 5000 || totalSpent <= 20000) {
+    discount = BRONZE_DISCOUNT;
+} else {
+    discount = BASE_DISCOUNT;
+}
+
+getDiscount(137000);
+getDiscount(46900);
+getDiscount(8250);
+getDiscount(1300);
+getDiscount(5000);
+getDiscount(20000);
+getDiscount(50000);
+}
