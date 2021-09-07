@@ -89,29 +89,62 @@ console.groupEnd();
 //     getDiscount(50000);
 // }
 // варіант 2 - підходить для цього завдання
-function getDiscount(totalSpent) {
-    const BASE_DISCOUNT = 0;
-    const BRONZE_DISCOUNT = 0.02;
-    const SILVER_DISCOUNT = 0.05;
-    const GOLD_DISCOUNT = 0.1;
-    let discount;
-    // Change code below this line
+// function getDiscount(totalSpent) {
+//     const BASE_DISCOUNT = 0;
+//     const BRONZE_DISCOUNT = 0.02;
+//     const SILVER_DISCOUNT = 0.05;
+//     const GOLD_DISCOUNT = 0.1;
+//     let discount;
+//     // Change code below this line
     
-if (totalSpent >= 50000) {
-    discount = GOLD_DISCOUNT;
-} else if (totalSpent >= 20000 || totalSpent <= 50000) {
-    discount = SILVER_DISCOUNT;
-} else if (totalSpent >= 5000 || totalSpent <= 20000) {
-    discount = BRONZE_DISCOUNT;
-} else {
-    discount = BASE_DISCOUNT;
-}
+// if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+// } else if (totalSpent >= 20000 || totalSpent <= 50000) {
+//     discount = SILVER_DISCOUNT;
+// } else if (totalSpent >= 5000 || totalSpent <= 20000) {
+//     discount = BRONZE_DISCOUNT;
+// } else {
+//     discount = BASE_DISCOUNT;
+// }
 
-getDiscount(137000);
-getDiscount(46900);
-getDiscount(8250);
-getDiscount(1300);
-getDiscount(5000);
-getDiscount(20000);
-getDiscount(50000);
-}
+// getDiscount(137000);
+// getDiscount(46900);
+// getDiscount(8250);
+// getDiscount(1300);
+// getDiscount(5000);
+// getDiscount(20000);
+// getDiscount(50000);
+// }
+
+// Завдання 29
+// function getShippingCost(country) {
+//     let message;
+//     let price;
+//     // Change code below this line
+    
+// switch (country) {
+//     case "China":
+//     price = 100;
+//     break;
+    
+//     case "Chile":
+//     price = 250;
+//     break;
+    
+//     case "Australia":
+//     price = 170;
+//     break;
+    
+//     case "Jamaica":
+//     price = 120;
+//     break;
+
+//     default:
+//     message = `Shipping to ${country} will cost ${price} credits`;
+
+//     // default:
+//     // message = `Sorry, there is no delivery to your country`
+// }
+//     // Change code above this line
+//     return message;
+// }
