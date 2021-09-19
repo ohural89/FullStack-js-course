@@ -206,31 +206,47 @@ console.groupEnd();
 
 // Задача 4
 // Калькулятор
-function calculator(firstNumber, secondNumber, operation) {
-    switch (operation) {
-        case "+":
-            return firstNumber + secondNumber;
-    }
+// function calculator(firstNumber, secondNumber, operation) {
+//     switch (operation) {
+//         case "+":
+//             return firstNumber + secondNumber;
+//     }
 
-    switch (operation) {
-        case "-":
-            return firstNumber - secondNumber;
-    }
+//     switch (operation) {
+//         case "-":
+//             return firstNumber - secondNumber;
+//     }
 
-    switch (operation) {
-        case "*":
-            return firstNumber * secondNumber;
-    }
+//     switch (operation) {
+//         case "*":
+//             return firstNumber * secondNumber;
+//     }
 
-    switch (operation) {
-        case "/":
-            return firstNumber / secondNumber;
+//     switch (operation) {
+//         case "/":
+//             return firstNumber / secondNumber;
 
-        default:
-            return "Enter true data!";
-    }
-}
-console.log(calculator(87, 23, "%")); // NaN - Not-A-Number
+//         default:
+//             return "Enter true data!";
+//     }
+// }
+// console.log(calculator(87, 23, "%")); // NaN - Not-A-Number
+
+
+// варіант 1
+// function calculator(x, y, operation) {
+//     const result = Number((x operation y)); // пмилка
+//     return result
+// }
+// console.log(calculator(5, 7, '+'));
+
+// варіант 2
+// function calculator(x, y, operation) {
+//     return `${x} ${operation} ${y}`; {
+
+//     }
+// }
+// console.log(calculator(5, 7, '+'));
 
 
 
