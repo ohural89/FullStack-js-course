@@ -40,3 +40,14 @@ const {
 // Change code above this line
 const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
 
+
+// Task 30
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+const newTask = {completed, category, priority, ...data};
+return newTask; 
+  // Change code above this line
+}
