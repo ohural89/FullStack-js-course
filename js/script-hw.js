@@ -231,7 +231,7 @@ function calculator(firstNumber, secondNumber, operation) {
     }
 }
 console.log(calculator(87, 23, "%")); // NaN - Not-A-Number
- 
+
 
 
 
