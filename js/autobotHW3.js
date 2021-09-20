@@ -63,3 +63,15 @@ this.books.splice(newBook, 1, newName);
     // Change code above this line
   },
 };
+
+//  Task 39
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  removePotion(potionName) {
+    // Change code below this line
+const removePotion = this.potions.indexOf(potionName);
+this.potions.splice(removePotion, 1);
+
+    // Change code above this line
+  },
+};
