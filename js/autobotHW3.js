@@ -75,3 +75,80 @@ this.potions.splice(removePotion, 1);
     // Change code above this line
   },
 };
+
+// Task 40
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  updatePotionName(oldName, newName) {
+    // Change code below this line
+const updatePotion = this.potions.indexOf(oldName);
+this.potions.splice(updatePotion, 1, newName);
+
+    // Change code above this line
+  },
+};
+
+//  Task 41
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+  
+addPotion(newPotion) {
+    for (const potion of this.potions) {
+      if (potion.name === newPotion.name) {
+        this.potions.push(newPotion);
+      }
+      return `Error! Potion ${newPotion.name} is already in your inventory!`;
+    }
+},
+  
+removePotion(potionName) {
+  for (const potion of this.potions) {
+    if (potion.name === potion) {
+      this.potions.splice(potionName, 1);
+    }
+    return `Potion ${potionName} is not in inventory!`;
+  }
+
+  // for (let i = 0; i < potions.length; i += 1) {
+  //   const {name} = potions[i];
+  //   if (potionName === name) {
+  //     potions.splice(i, 1);
+  //   }
+  //   return `Potion ${potionName} is not in inventory!`;
+  // }
+},
+  
+  updatePotionName(oldName, newName) {
+    for (const potion of this.potions) {
+      if (oldName === potion) {
+        
+    }
+    for (let i = 0; i < potions.length; i++) {
+      const {name} = potions[i];
+     
+        return (name = newName);
+      }
+      return `Potion ${oldName} is not in inventory!`;
+    }
+  },
+  // Change code above this line
+  // Варіант 2
+  //   updatePotionName(oldName, newName) {
+  //   for (let potion of this.potions) {
+  //     if (potion.name === oldName) {
+  //       return potion.name = newName;
+  //     }
+  //   }
+  //   return `Potion ${oldName} is not in inventory!`;
+  // },
+};
+
+

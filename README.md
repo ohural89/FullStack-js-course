@@ -14,9 +14,9 @@ FullStack-js-course from 30/08/21
 // updatePotionName(oldName, newName) - обновляет свойство name объекта-зелья с названием oldName на newName в массиве potions.
 
 // Тесты
-// Объявлена переменная atTheOldToad
-// Значение переменной atTheOldToad это объект
-// Значение свойства atTheOldToad.getPotions это метод объекта
++ Объявлена переменная atTheOldToad
++ Значение переменной atTheOldToad это объект
++ Значение свойства atTheOldToad.getPotions это метод объекта
 // Вызов метода atTheOldToad.getPotions() для исходного объекта возвращает [ { name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 } ]
 // Значение свойства atTheOldToad.addPotion это метод объекта.
 // Для исходного объекта после вызова метода atTheOldToad.addPotion({ name: "Invisibility", price: 620 }), в массиве potions последним элементом будет этот объект

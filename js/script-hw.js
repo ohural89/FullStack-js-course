@@ -247,48 +247,55 @@ console.groupEnd();
 //     }
 // }
 // console.log(calculator(5, 7, '+'));
+// Кінець Практики з ментором 19.09.2021
 
+//  Task 41 bot
 const atTheOldToad = {
     potions: [
     { name: "Speed potion", price: 460 },
     { name: "Dragon breath", price: 780 },
     { name: "Stone skin", price: 520 },
-],
+    ],
     // Change code below this line
     getPotions() {
         return this.potions;
     },
+    
     addPotion(newPotion) {
-        if (this.potions.includes(newPotion)) {
-        return `Error! Potion ${newPotion} is already in your inventory!`;
-    }
-
+        for (let potion of this.potions) {
+            if (potion.name === newPotion.name) {
+                return `Error! Potion ${newPotion.name} is already in your inventory!`;
+            }
+        }
         this.potions.push(newPotion);
     },
+    
     removePotion(potionName) {
-        const potionIndex = this.potions.indexOf(potionName);
-
-        if (potionIndex === -1) {
-        return `Potion ${potionName} is not in inventory!`;
-    }
-
-    this.potions.splice(potionIndex, 1);
+        let potionIndex = -1;
+        for (let potion of this.potions) {
+            if (potionName === potion.name) {
+                potionIndex = this.potions.indexOf(potion);
+            }
+        }
+        this.potions.splice(potionIndex, 1);
     },
+    
     updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
+        let potionIndex = -1;
+        for (let potion of this.potions) {
+            if (oldName === potion.name) {
+                potionIndex = this.potion.indexOf(potion);
+            }
+        }
 
         if (potionIndex === -1) {
-        return `Potion ${oldName} is not in inventory!`;
-    }
+            return `Potion ${oldName} is not in inventory!`;
+        }
 
-    this.potions.splice(potionIndex, 1, newName);
+        const updatePotion = this.potions[potionIndex];
+        updatePotion.name = newName;
+    
+        this.potions.splice(potionIndex, 1, newName);
     },
     // Change code above this line
 };
-
-
-
-
-
-
-
