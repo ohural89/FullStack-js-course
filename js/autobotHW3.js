@@ -51,3 +51,15 @@ const newTask = {completed, category, priority, ...data};
 return newTask; 
   // Change code above this line
 }
+
+//  Task 35
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+const newBook = this.books.indexOf(oldName);
+this.books.splice(newBook, 1, newName);
+    return bookShelf.updateBook;
+    // Change code above this line
+  },
+};
