@@ -13,7 +13,7 @@ console.group('User Details');
     console.groupEnd();
 console.groupEnd();
 
-// const value = prompt("Please enter a number!");
+// ????????????????? const value = prompt("Please enter a number!");
 // console.log(typeof value); // "string"
 // console.log(value); // "5"
 
@@ -31,10 +31,4 @@ console.groupEnd();
 
 // // Change code below this line
 // const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
-// console.log(message)
-
-
-
-
-
-//  Task 41 bot
+// console.log(message) ?????????????????????????7

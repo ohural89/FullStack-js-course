@@ -150,10 +150,7 @@ function calculateTotalPrice(productName) {
     
 }
   }
-  
-  return totalPrice;
-
-
+    return totalPrice;
   // Пиши код выше этой строки
 }
 // Task 23
