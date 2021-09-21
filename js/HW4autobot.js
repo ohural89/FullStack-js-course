@@ -68,26 +68,84 @@
 // });
 
 // Task 4
-const pizzaPalace = {
-    pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
-    order(pizzaName, onSuccess, onError) {
-        
-    },
-};
-  // Change code above this line
+// const pizzaPalace = {
+//     pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//     order(pizzaName, onSuccess, onError) {
+//       for (let piza of this.pizzas){
+//         if (pizzaName === piza) {
+//           return makePizza(pizzaName);
+//         }
+//       }
+//       return onError(`There is no pizza with a name ${pizzaName} in the assortment.`);
+//     },
+//   };
+//   // Change code above this line
 
-  // Callback for onSuccess
-function makePizza(pizzaName) {
-    return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-}
+//   // Callback for onSuccess
+// function makePizza(pizzaName) {
+//     return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
 
-  // Callback for onError
-function onOrderError(error) {
-    return `Error! ${error}`;
-}
+//   // Callback for onError
+// function onOrderError(error) {
+//     return `Error! ${error}`;
+// }
 
-  // Method calls with callbacks
-pizzaPalace.order('Smoked', makePizza, onOrderError);
-pizzaPalace.order('Four meats', makePizza, onOrderError);
-pizzaPalace.order('Big Mike', makePizza, onOrderError);
-pizzaPalace.order('Vienna', makePizza, onOrderError);
+//   // Method calls with callbacks
+// // pizzaPalace.order('Smoked', makePizza, onOrderError);
+// // pizzaPalace.order('Four meats', makePizza, onOrderError);
+// // pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// // pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Four meats', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Big Mike', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
+
+// Task 5
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   // for (let i = 0; i < orderedItems.length; i += 1) {
+//   //   totalPrice += orderedItems[i];
+//   // }
+
+  // orderedItems.forEach(function(number, index) {
+  //   totalPrice += number;
+  // });
+  
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+
+// Task 6
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] > value) {
+//   //     filteredNumbers.push(numbers[i]);
+//   //   }
+//   // }
+
+//   numbers.forEach(function(number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
