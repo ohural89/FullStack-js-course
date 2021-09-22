@@ -82,6 +82,35 @@
 // getDiscount(50000);
 // }
 
+// Task 25
+// const forecast = {
+//     today: {
+//         low: 28,
+//         high: 32,
+//         icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//     },
+//     tomorrow: {
+//         low: 27,
+//         high: 31,
+//     },
+// };
+//   // Change code below this line
+
+//     const highToday = forecast.today.high;
+//     const lowToday = forecast.today.low;
+//     const todayIcon = forecast.today.icon;
+
+//     const highTomorrow = forecast.tomorrow.high;
+//     const lowTomorrow = forecast.tomorrow.low;
+//     const tomorrowIcon = forecast.tomorrow.icon;
+
+// // Відповідь
+//     const {
+//     today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg"},
+//     tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = 
+//     "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}, } = forecast;
+//     const highTemperatures = (forecast.today * forecast.tomorrow) / 2
+
 // Завдання 29
 // function getShippingCost(country) {
 //     let message;
