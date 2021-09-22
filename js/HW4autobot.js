@@ -296,38 +296,34 @@
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 
 // Task 13
-function changeEven(numbers, value) {
-  // Change code below this line
-  for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers[i] % 2 === 0) {
-      numbers[i] = numbers[i] + value;
-    }
-  }
-  // Change code above this line
-}
-
 // function changeEven(numbers, value) {
-  // Change code below this line
-  // const newArray = [];
-
-  // numbers.forEach(number => {
-  //   for (let i = 0; i < numbers.length; i += 1) {
-  //     if (numbers[i] % 2 === 0) {
-  //       newArray.push(numbers[i] = numbers[i] + value);
-  //     }
-  //   }});
-
-  // return newArray;
-
-  // for (let i = 0; i < numbers.length; i += 1) {
-    // if (numbers[i] % 2 === 0) {
-    //   numbers[i] = numbers[i] + value;
-    // }
-  // }
-  // Change code above this line
+//   // Change code below this line
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] = numbers[i] + value;
+//     }
+//   }
+//   // Change code above this line
 // }
 
-console.log(changeEven([1, 2, 3, 4, 5], 10));
-console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
-console.log(changeEven([17, 24, 68, 31, 42], 100));
-console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       newArray.push(numbers[i] + value);
+//     } else {
+//       newArray.push(numbers[i])
+//     }
+//   }
+//   return newArray;
+//   // Change code above this line
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+
+// Task 14
+
