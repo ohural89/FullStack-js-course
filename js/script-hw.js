@@ -3,11 +3,11 @@
 
 console.group('User Details');
     console.log('name: Olena Hural');
-    console.log('education: Physician');
+    // console.log('education: Physician');
 
 // Nested Group
     console.group('Address');
-    console.log('Street: Naukova');
+    // console.log('Street: Naukova');
     console.log('City: Lviv');
     console.log('Country: UA');
     console.groupEnd();
