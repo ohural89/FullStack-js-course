@@ -479,8 +479,44 @@
 // Change code above this line
 
 // Task 19
-const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
-// Change code below this line
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // // Change code below this line
+// // const evenNumbers = numbers;
+// // const oddNumbers = numbers;
 
-const evenNumbers = numbers;
-const oddNumbers = numbers;
+// // Change code below this line
+// const evenNumbers = numbers.filter(number => number % 2 == 0);
+// const oddNumbers = numbers.filter(number => number % 2 === 1);
+
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+
+// Task 20
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// // Change code below this line
+// // const allGenres = books;
+// // const uniqueGenres = allGenres;
+
+// const allGenres = books.flatMap(book => book.genres);
+// const uniqueGenres = allGenres.filter((genre, index, array) => allGenres.indexOf(genre) === index);
+
+// console.log(allGenres);
+// console.log(uniqueGenres);
+
+// Task 21
