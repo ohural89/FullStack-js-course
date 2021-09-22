@@ -326,4 +326,72 @@
 // console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
 
 // Task 14
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets;
+// //  вирішення
+// const planetsLengths = planets.map(planet => planet.length);
 
+// Task 15
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const titles = books;
+// // вирішення
+// const titles = books.map(book => book.title);
+
+// Task 16
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+// // Change code below this line
+// const genres = books;
+// // вирішення
+// const genres = books.flatMap(book => book.genres);
+
+// Task 17
+// Change code below this line
+// const getUserNames = users => {
+    
+
+// };
+// Change code above this line
+
+// Change code below this line
+const getUserNames = users => {
+    
+
+};
+// Change code above this line
