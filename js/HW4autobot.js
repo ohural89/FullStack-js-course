@@ -664,16 +664,33 @@
 // const anyElementInThirdIsOdd = thirdArray.some(number => number % 2 == 1);
 
 // Task 34 reduce()
-const players = {
-  mango: 1270,
-  poly: 468,
-  ajax: 710,
-  kiwi: 244
-};
-const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((acc, player) => acc + player);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// console.log(playtimes);
+// console.log(totalPlayTime);
+// console.log(averagePlayTime);
+
+// Task 35 reduce()
+const players = [
+  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+  { name: "Poly", playtime: 469, gamesPlayed: 2 },
+  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+];
 // Change code below this line
 
-const totalPlayTime = playtimes;
-
-// Change code above this line
-const averagePlayTime = totalPlayTime / playtimes.length;
+const totalAveragePlaytimePerGame = 
+  players.reduce(
+    (acc, everyPlayer) => );
