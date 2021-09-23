@@ -5,3 +5,6 @@
 // a = myFunc(); //переменной a присваивается результат выполнения функции myFunc()
 // a = myFunc; //переменной a присваивается ссылка на функцию myFunc
 
+
+// function declaration
+// function getUsersWithEyeColor (users, color) {} = function declaration
