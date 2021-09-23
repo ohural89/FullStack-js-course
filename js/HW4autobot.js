@@ -693,4 +693,4 @@ const players = [
 
 const totalAveragePlaytimePerGame = 
   players.reduce(
-    (acc, everyPlayer) => );
+    (acc, everyPlayer))
