@@ -381,7 +381,7 @@
 // // вирішення
 // const genres = books.flatMap(book => book.genres);
 
-// Task 17, 18; 22, 23, 24, 25, 26, 27, 29, 33
+// Task 17, 18; 22, 23, 24, 25, 26, 27, 29, 33, 36, 37, 42, 43
 // const users = [
 //   {
 //     name: "Moore Hensley",
@@ -572,6 +572,65 @@
 // };
 // Change code above this line
 
+// Task 36
+// Change code below this line
+// const calculateTotalBalance = users => {
+// };
+// Change code above this line
+// answer
+// Change code below this line
+// const calculateTotalBalance = (users) => {
+//   const totalBalance = users.reduce((total, user) => {
+//     return total + user.balance}, 0)
+//       return totalBalance;
+// };
+// // Change code above this line
+// console.log(calculateTotalBalance);
+
+// Task 37
+// Change code below this line
+// const getTotalFriendCount = users => {
+//   return users.reduce((totalFriends, user)=> {
+//     return totalFriends + user.friends.length
+//     }, 0)
+// };
+// Change code above this line
+
+// Task 42
+// Change code below this line
+// const sortByAscendingBalance = users => {
+  
+// };
+// Change code above this line
+// answer
+// const sortByAscendingBalance = users => {
+//   const newArray = [...users].sort((firstUser, secondUser) => firstUser.balance - secondUser.balance)
+//   return newArray;
+// };
+// Task 43
+// Change code below this line
+// const sortByDescendingFriendCount = users => {
+  
+// };
+// Change code above this line
+// const sortByDescendingFriendCount = users => {
+//   const newArray = [...users].sort((firstUser, secondUser) =>
+//   secondUser.friends.length - firstUser.friends.length)
+//   return newArray;
+// };
+
+// Task 44
+// Change code below this line
+// const sortByName = users => {
+//   const newArray = [...users].sort(
+//     (firstUser, secondUser) =>
+//     firstUser.name.localeCompare(secondUser.name)
+//   )
+//   return newArray;
+// };
+
+// Change code above this line
+
 // Task 19
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
 // // // Change code below this line
@@ -587,7 +646,7 @@
 
 
 
-// Task 20, 21, 28
+// Task 20, 21, 28, 41
 // const books = [
 //   {
 //     title: "The Last Kingdom",
@@ -636,6 +695,30 @@
 
 // console.log(bookWithTitle);
 // console.log(bookByAuthor);
+// 41
+// // Change code below this line
+// // const sortedByAuthorName = books;
+// // const sortedByReversedAuthorName = books;
+// // const sortedByAscendingRating = books;
+// // const sortedByDescentingRating = books;
+// // answer
+// // Change code below this line
+// const sortedByAuthorName = [...books].sort((firstAuthor,secondAuthor) => firstAuthor.author.localeCompare(secondAuthor.author));
+// const sortedByReversedAuthorName = [...books].sort((firstAuthor,secondAuthor) => secondAuthor.author.localeCompare(firstAuthor.author));
+// const sortedByAscendingRating = [...books].sort((firstAuthor, secondAuthor) => firstAuthor.rating - secondAuthor.rating);
+// const sortedByDescentingRating = [...books].sort((firstAuthor, secondAuthor) => secondAuthor.rating - firstAuthor.rating);
+
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
+
+// Task 45 (chaining) метод ланцюжків
+const MIN_BOOK_RATING = 8;
+// Change code below this line
+
+const names = books;
+
 
 // Task 30 every(), 32 some()
 // const firstArray = [26, 94, 36, 18];
@@ -683,14 +766,58 @@
 // console.log(averagePlayTime);
 
 // Task 35 reduce()
-const players = [
-  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
-  { name: "Poly", playtime: 469, gamesPlayed: 2 },
-  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
-  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
-];
-// Change code below this line
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
 
-const totalAveragePlaytimePerGame = 
-  players.reduce(
-    (acc, everyPlayer))
+// // my opinion
+// // const totalAveragePlaytimePerGame = players.reduce((acc, gamesPlayed) => acc / gamesPlayed);
+
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//   return (acc += player.playtime / player.gamesPlayed);
+// }, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+// Task 38, 39, 40
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// Change code below this line
+// const ascendingReleaseDates = releaseDates;
+// const alphabeticalAuthors = authors;
+
+// answer
+// const ascendingReleaseDates = [...releaseDates].sort();
+// const alphabeticalAuthors = [...authors].sort();
+
+// console.log(ascendingReleaseDates);
+// console.log(alphabeticalAuthors);
+
+// 39
+// Change code below this line
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
+
+// Task 41
+// Change code below this line
+// const authorsInAlphabetOrder = authors;
+// const authorsInReversedOrder = authors;
+
+// Change code below this line
+// const authorsInAlphabetOrder = [...authors].sort((a,b) => a.localeCompare(b));
+// const authorsInReversedOrder = [...authors].sort((a,b) => b.localeCompare(a));
+
+// console.log(authorsInAlphabetOrder);
+// console.log(authorsInReversedOrder);
+
