@@ -381,7 +381,7 @@
 // // вирішення
 // const genres = books.flatMap(book => book.genres);
 
-// Task 17, 18; 22, 23, 24, 25, 26, 27, 29, 33, 36, 37, 42, 43
+// Task 17, 18; 22, 23, 24, 25, 26, 27, 29, 33, 36, 37, 42, 43, 46, 47, 48
 // const users = [
 //   {
 //     name: "Moore Hensley",
@@ -461,6 +461,14 @@
 //     age: 39,
 //   },
 // ];
+// Task 48
+// Change code below this line
+// const getTotalBalanceByGender = (users, gender) => {
+//   return [...users].filter(user => user.gender === gender).reduce((totalBalance, user) => totalBalance + user.balance, 0)
+// };
+// Change code above this line
+
+
 // // Change code below this line
 // // const getUserNames = users => {
 
@@ -630,6 +638,23 @@
 // };
 
 // Change code above this line
+
+// Task 46
+// Change code below this line
+// const getNamesSortedByFriendCount = users => {
+//   return [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name)
+// };
+// Change code above this line
+
+// Task 47
+// Change code below this line
+// const getSortedFriends = users => {
+//   return users.flatMap(user => user.friends).filter((friend, index, allFriends) => allFriends.indexOf(friend) === index).sort((a, b) => a.localeCompare(b))
+// };
+// Change code above this line
+
+
+
 
 // Task 19
 // const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
