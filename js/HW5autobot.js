@@ -127,8 +127,8 @@
 // child.age = 27;
 
 // // Change code above this line
-// console.log(ancestor.isPrototypeOf("parent")); // true --> false?
-// console.log(parent.isPrototypeOf("child")); // true --> false?
+// console.log(ancestor.isPrototypeOf(parent)); // true --> false?
+// console.log(parent.isPrototypeOf(child)); // true --> false?
 // console.log(ancestor.hasOwnProperty("surname")); // true
 // console.log(parent.hasOwnProperty("surname")); // true
 // console.log(child.hasOwnProperty("surname")); // false
@@ -204,11 +204,11 @@ class Storage {
     }
 
     addItem(newItem) {
-        this.items = newItem;
+        this.items = items.push(newItem);
     }
 
     removeItem(itemToRemove) {
-
+        this.items = items.filter(itemToRemove);
     }
 }
 
