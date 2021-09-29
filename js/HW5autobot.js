@@ -222,36 +222,49 @@
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
 // Task 11
-class StringBuilder {
-    constructor (initialValue) {
-        this.value = initialValue;
-    }
+// class StringBuilder {
+//     constructor (initialValue) {
+//         this.value = initialValue;
+//     }
 
-    getValue() {
-        return this.value;
-    }
+//     getValue() {
+//         return this.value;
+//     }
 
-    padEnd(str) {
-        this.value = this.value + str;
-    }
+//     padEnd(str) {
+//         this.value = this.value + str;
+//     }
 
-    padStart(str) {
-        this.value = str + this.value;
-    }
+//     padStart(str) {
+//         this.value = str + this.value;
+//     }
 
-    padBoth(str) {
-        this.padStart(str);
-        this.padEnd(str);
-    }
-}
+//     padBoth(str) {
+//         this.padStart(str);
+//         this.padEnd(str);
+//     }
+// }
 
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder);
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder);
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+// Task 12
+class Car {
+    // Change code below this line
+  
+    constructor({ brand, model, price }) {
+      this.brand = brand;
+      this.model = model;
+      this.price = price;
+    }
+  
+    // Change code above this line
+  }
